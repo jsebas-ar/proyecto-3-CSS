@@ -1,0 +1,88 @@
+
+/* ejercicio de caja */
+.caja {
+    /* propiedades especiales que se heredan */
+    font-size: 20px;
+    color: red;
+
+    outline: 1px solid rgb(25, 216, 4);
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 5px solid orange;
+    margin: 50px;
+}
+
+/* ejercicio de selectores */
+header > nav > a {
+    font-size: 50px;
+}
+
+aside a {
+    color: green;
+}
+
+/* compartir propiedad css */
+h2, .texto-centrados {
+    text-align: center;
+}
+
+
+h1 {
+    color: red;
+}
+
+.texto-grande {
+    font-size: 60px;
+    color: blue;
+}
+
+#texto-pequeno {
+    font-size: 10px;
+    color: yellow;
+}
+
+/* estilizar textos */
+
+/* text-align */
+.alineacion {
+    /* alineacion a la izquier */
+    /* text-align: left; */
+
+    /* alineacion al centro */
+    /* text-align: center; */
+
+    /* alineacion a la derecha */
+    /* text-align: right; */
+
+    /* justificar texto */
+    text-align: justify;
+}
+
+.tamanos {
+    /* tamano por defecto */
+    /* font-size: 16px; */
+    font-size: 100px;
+}
+
+.decoraciones {
+    /* subrayado */
+    /* text-decoration: underline; */
+
+    text-decoration: line-through;
+}
+
+.quitar-subrayado {
+    text-decoration: unset;
+}
+
+.transformaciones {
+    /* primera letra de cada palabra en mayuscula */
+    /* text-transform: capitalize; */
+
+    /* todo en mayuscula */
+    /* text-transform: uppercase; */
+
+    /* todo minusculas */
+    text-transform: lowercase;
+}

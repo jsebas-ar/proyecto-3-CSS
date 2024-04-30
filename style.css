@@ -1,3 +1,8 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* ejercicio de caja */
 .caja {
@@ -85,4 +90,56 @@ h1 {
 
     /* todo minusculas */
     text-transform: lowercase;
+}
+
+.espaciado-de-textos {
+    /* modifica es espacio entre cada linea de texto */
+    line-height: 25px;
+    /* espaciado entre letras */
+    letter-spacing: 3px;
+    /* espaciado entre palabras */
+    word-spacing: 20px;
+}
+
+.grosor-letra {
+    /* el valor de grosor se puede manejar en un rango de 0 - 900, va de 100 en 100 */
+    font-weight: lighter;
+}
+
+.posicion-caja-1, .posicion-caja-2, .posicion-caja-3, .posicion-caja-4 {
+    height: 100px;
+    width: 100px;
+    border: 3px solid blue;
+    margin: 20px;
+}
+
+.posicion-caja-1 {
+    /* el movimiento va a ser relativo a su posicion original */
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+}
+
+.caja-padre {
+    position: relative;
+    border: 2px red solid;
+}
+.posicion-caja-2 {
+    /* el elemento pierde su posicion */
+    /* y lo podemos mover en relacion al elemento padre que tenga un relative */
+    position: absolute;
+    border-color: blueviolet;
+    bottom: 0;
+    right: 0;
+}
+
+.posicion-caja-3 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.posicion-caja-4 {
+    position: sticky;
+    top: 0;
 }

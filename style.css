@@ -246,3 +246,57 @@ h1 {
         background-color: blueviolet;
     }
 }
+/* 
+    las etiquetas inline por defecto son:
+    - button
+    - input
+    - img
+    - span
+*/
+.transformacion {
+    display: block;
+    margin: auto;
+    transition: transform 1s;
+}
+
+.transformacion:hover {
+    /* escalar el elemento */
+    transform: scale(1.2);
+
+    /* rotar elementos */
+    /* transform: rotate(-180deg); */
+
+    /* transladar el elemnto en el eje x,y */
+    /* transform: translate(0px, 100%); */
+}
+
+.titulo-animado {
+    text-align: center;
+    animation: aparecer 2s linear forwards;
+}
+
+@keyframes aparecer {
+    from {
+        transform: translate(-1000px, 0px);
+    }
+
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+c
+.responsive {
+    font-size: 150px;
+}
+
+@media screen and (width < 800px) {
+    .responsive {
+        font-size: 120px;
+    }
+}
+
+@media screen and (width < 640px) {
+    .responsive {
+        font-size: 100px;
+    }
+}
